@@ -97,7 +97,7 @@ body {
 }
 
 .unread-item {
-    background-color: var(--light-grayish-blue-1);
+    background-color: var(--very-light-grayish-blue);
 }
 
 /**Avatar image*/
