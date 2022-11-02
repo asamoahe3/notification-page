@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Source code](https://your-solution-url.com)
-- Live Site URL: [Preview](https://your-live-site-url.com)
+- Solution URL: [Source code](https://github.com/asamoahe3/notification-page)
+- Live Site URL: [Preview](https://notify-page.netlify.app/)
 
 ## My process
 
@@ -51,5 +51,4 @@ Users should be able to:
 - Frontend Mentor - [@asamoahE3](https://www.frontendmentor.io/profile/asamoahe3)
 - Twitter - [@asamoah_e3](https://www.twitter.com/asamoah_e3)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
