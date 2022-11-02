@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--very-light-grayish-blue);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 100vh;
+    word-spacing: 0.1rem;
+}
+
+/**Notification card section*/
+.notification-card {
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    width: 50%;
+    box-shadow: 0px 0px 30px hsla(219, 12%, 42%, 0.123);
+}
+
+@media (max-width: 767px) {
+    .notification-card {
+        width: 90%;
+        padding: 1rem;
+    }
+}
+
+.notification-card--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.notification-card--top-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.notification-card--top-item h4:nth-child(1) {
+    color: var(--very-dark-blue);
+}
+
+/**Notication counter item*/
+.notification-card--top-item h4:nth-child(2) {
+    background-color: var(--blue);
+    border-radius: 0.3rem;
+    color: var(--white);
+    padding: 0.2rem 0.6rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+/**Mark all as read*/
+.notification-card--top-item:nth-child(2) a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.notification-card--top-item:nth-child(2) a:hover {
+    color: var(--blue);
+}
+
+.notification-card--content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.notification-card--content-item {
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.unread-item {
+    background-color: var(--very-light-grayish-blue);
+}
+
+/**Avatar image*/
+.avatar img {
+    max-width: 70%;
+    max-height: auto;
+}
+
+.post-content {
+    display: flex;
+    flex-flow: column;
+    gap: 0.2rem;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.dot::before {
+    content: '\25CF';
+    font-size: 16px;
+    color: var(--red);
+}
+
+
+.username {
+    color: var(--very-dark-blue);
+    font-weight: 800;
+}
+
+.username:hover,
+.posts:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.posts {
+    color: var(--dark-grayish-blue);
+    font-weight: 800;
+}
+
+.private-message {
+    border: 1px solid var(--light-grayish-blue-2);
+    border-radius: 0.2rem;
+    padding: 1rem 1.3rem;
+    margin-top: 0.5rem;
+}
+
+
+.kimberly {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.kimberly img {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.hidden {
+    display: none;
+}
